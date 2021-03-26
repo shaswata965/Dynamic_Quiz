@@ -176,6 +176,7 @@ document.querySelector("#qn").addEventListener("keyup",function(event){
         //
         // shuffle(randomArray);
         // var currentRandomArray = randomArray.slice(0,x);
+
         for(var i=0;i<x;i++){
       questionId.innerHTML += '<h2>' + questions[i].question + '</h2>';
       questionId.innerHTML += "<label> <input type='checkbox' id='a' name='choicea' value='a' > " + questions[i].opt_a +
@@ -186,7 +187,7 @@ document.querySelector("#qn").addEventListener("keyup",function(event){
           "</label><br>";
         }
     }
-    questionfunc();
+  if(x<=15){  questionfunc();}else{    questionId.innerHTML += '<h2> Please Enter A Value From 1-15 </h2>';}
   }
 
 
