@@ -187,7 +187,12 @@ document.querySelector("#qn").addEventListener("keyup",function(event){
           "</label><br>";
         }
     }
-  if(x<=15){  questionfunc();}else{    questionId.innerHTML += '<h2> Please Enter A Value From 1-15 </h2>';}
+  if(x<=15){  questionfunc();}else{    questionId.innerHTML += '<h2> Please Enter A Value From 1-15 </h2>';
+  setTimeout(function(){
+    location.reload();
+  },1500);
+
+}
   }
 
 
