@@ -80,4 +80,10 @@ nav:hover{
     flex-basis: 0;
     flex-grow: 0;
   }
+  .main{
+    width: 60vw;
+  }
+  #question{
+    width:60vw;
+  }
 }
